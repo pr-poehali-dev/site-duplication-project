@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 import { Input } from "@/components/ui/input";
 
 const Browser = () => {
-  const [url, setUrl] = useState("https://www.microsoft.com");
+  const [url, setUrl] = useState("https://www.suntimesos.com");
 
   return (
     <div className="flex flex-col h-full bg-white">
@@ -38,8 +38,8 @@ const Browser = () => {
       </div>
 
       <div className="h-10 bg-white border-b border-gray-200 flex items-center px-2 gap-1">
-        <button className="px-4 py-1 bg-gray-100 rounded-t text-sm flex items-center gap-2 border-t-2 border-[#0078D4]">
-          <span>Microsoft</span>
+        <button className="px-4 py-1 bg-gray-100 rounded-t text-sm flex items-center gap-2 border-t-2 border-[#FF8C00]">
+          <span>SunTimesOS</span>
           <Icon name="X" size={12} className="text-gray-600 hover:text-gray-800" />
         </button>
         <button className="w-8 h-8 flex items-center justify-center hover:bg-gray-100 rounded transition-colors">
@@ -49,13 +49,13 @@ const Browser = () => {
 
       <div className="flex-1 bg-gradient-to-br from-white to-gray-50 flex items-center justify-center">
         <div className="text-center space-y-4">
-          <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#0078D4] to-[#00BCF2] rounded-full flex items-center justify-center">
-            <Icon name="Globe" size={48} className="text-white" />
+          <div className="w-24 h-24 mx-auto bg-gradient-to-br from-[#FF8C00] to-[#FFA500] rounded-full flex items-center justify-center">
+            <Icon name="Sun" size={48} className="text-white" />
           </div>
-          <h2 className="text-2xl font-semibold text-gray-800">Microsoft Edge</h2>
-          <p className="text-gray-600">Быстрый и безопасный браузер</p>
+          <h2 className="text-2xl font-semibold text-gray-800">SunTimes Browser</h2>
+          <p className="text-gray-600">Быстрый и безопасный браузер от SunTimesOS</p>
           <div className="flex gap-2 justify-center mt-6">
-            <button className="px-4 py-2 bg-[#0078D4] text-white rounded hover:bg-[#0063B1] transition-colors text-sm">
+            <button className="px-4 py-2 bg-[#FF8C00] text-white rounded hover:bg-[#FF7F00] transition-colors text-sm">
               Начать работу
             </button>
             <button className="px-4 py-2 bg-white border border-gray-300 text-gray-800 rounded hover:bg-gray-50 transition-colors text-sm">

@@ -7,6 +7,14 @@ import FileExplorer from "@/components/apps/FileExplorer";
 import Browser from "@/components/apps/Browser";
 import Notepad from "@/components/apps/Notepad";
 import Calculator from "@/components/apps/Calculator";
+import Settings from "@/components/apps/Settings";
+import Calendar from "@/components/apps/Calendar";
+import Photos from "@/components/apps/Photos";
+import Mail from "@/components/apps/Mail";
+import Store from "@/components/apps/Store";
+import Terminal from "@/components/apps/Terminal";
+import Paint from "@/components/apps/Paint";
+import Camera from "@/components/apps/Camera";
 
 export interface WindowState {
   id: string;
@@ -26,9 +34,17 @@ const Index = () => {
   const openApp = (appName: string) => {
     const appConfigs: Record<string, Partial<WindowState>> = {
       explorer: { title: "Проводник", icon: "📁", content: <FileExplorer /> },
-      browser: { title: "Microsoft Edge", icon: "🌐", content: <Browser /> },
+      browser: { title: "SunTimes Browser", icon: "🌐", content: <Browser /> },
       notepad: { title: "Блокнот", icon: "📝", content: <Notepad /> },
       calculator: { title: "Калькулятор", icon: "🔢", content: <Calculator /> },
+      settings: { title: "Параметры", icon: "⚙️", content: <Settings /> },
+      calendar: { title: "Календарь", icon: "📅", content: <Calendar /> },
+      photos: { title: "Фотографии", icon: "🖼️", content: <Photos /> },
+      mail: { title: "Почта", icon: "✉️", content: <Mail /> },
+      store: { title: "SunTimes Store", icon: "🛍️", content: <Store /> },
+      terminal: { title: "Терминал", icon: "⌨️", content: <Terminal /> },
+      paint: { title: "Paint", icon: "🎨", content: <Paint /> },
+      camera: { title: "Камера", icon: "📷", content: <Camera /> },
     };
 
     const config = appConfigs[appName];

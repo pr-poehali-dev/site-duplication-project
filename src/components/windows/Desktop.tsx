@@ -8,8 +8,12 @@ const Desktop = ({ onDoubleClick }: DesktopProps) => {
   const desktopIcons = [
     { name: "Этот компьютер", icon: "Monitor", app: "explorer" },
     { name: "Корзина", icon: "Trash2", app: "recycle" },
-    { name: "Microsoft Edge", icon: "Globe", app: "browser" },
+    { name: "SunTimes Browser", icon: "Sun", app: "browser" },
     { name: "Блокнот", icon: "FileText", app: "notepad" },
+    { name: "Калькулятор", icon: "Calculator", app: "calculator" },
+    { name: "Фотографии", icon: "Image", app: "photos" },
+    { name: "Почта", icon: "Mail", app: "mail" },
+    { name: "Календарь", icon: "Calendar", app: "calendar" },
   ];
 
   return (
